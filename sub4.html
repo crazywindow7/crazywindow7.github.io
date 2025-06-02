@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>All of Bach | 주요 악기</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .instrument-grid{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 3rem 2rem;
+      margin: 2rem 0;
+    }
+    .instrument-card{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.2rem;
+    }
+    .inst-label{
+      border: 2px solid #000;
+      border-radius: 6px;
+      padding: .9rem 2rem;
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin: 0;
+      text-align: center;
+    }
+    .inst-desc{
+      border: 2px solid #ccc;
+      padding: 1rem 1.2rem;
+      font-size: .97rem;
+      line-height: 1.55;
+      color: #555;
+      text-align: center;
+    }
+    .inst-media iframe{
+      width: 100%;
+      aspect-ratio: 16/9;
+      border: 1px solid #ccc;
+      border-radius:6px;
+      background: #e0e0e0;
+
+      object-fit: cover;
+    }
+    @media(max-width:800px){
+      .instrument-grid{
+        grid-template-columns:1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo"><a href="index.html"><img src="src/images/logo.jpg"></a></div>
+      <nav>
+        <a href="sub1.html">바흐의 생애</a>
+        <a href="sub2.html">주요 작품</a>
+        <a href="sub3.html">음악적 특징</a>
+        <a href="sub4.html">주요 악기</a>
+        <a href="sub5.html">NBS 소개</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+  <h1>바흐가 사용한 악기들</h1>
+  <section class="instrument-grid">
+    <div class="instrument-card">
+      <h2 class="inst-label">오르간</h2>
+      <div class="inst-media">
+        <iframe src="https://www.youtube.com/embed/tE7k93eu260?si=09dub-EwvVFRAB7N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <p class="inst-desc">오르간은 파이프를 울려 소리를 내는 건반악기로, 주로 교회 예배에서 사용되며 여러 개의 건반과 페달로 다양한 음색을 만들어낼 수 있다. BWV846 오르간 버전을 감상해보도록 하자.</p>
+    </div>
+    <div class="instrument-card">
+      <h2 class="inst-label">하프시코드</h2>
+      <div class="inst-media">
+        <iframe src="https://www.youtube.com/embed/xCqWH9bKzQE?si=JJkTQwUUwPJQw8Li" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <p  class="inst-desc">하프시코드는 피아노의 전신인 건반악기로, 현을 뜯어 소리를 내므로 또렷하고 짧은 타음이 특징이다. 키를 누르는 세기에 상관없이 음량이 일정하다. BWV846 하프시코드 버전을 감상해보도록 하자.</p>
+    </div>
+    <div class="instrument-card">
+      <h2 class="inst-label">클라비코드</h2>
+      <div class="inst-media">
+        <iframe src="https://www.youtube.com/embed/hj3Ak4IKNY8?si=hWk7HDNYWbQFjfnd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <p  class="inst-desc">건반을 누르면 금속 조각이 현을 눌러 진동시키며, 현에 직접 접촉하기 때문에 매우 섬세한 강약 표현이 가능하다. 소리가 작아 주로 가정 연주용으로 사용되었다. BWV846 클라비코드 버전을 감상해보도록 하자.</p>
+    </div>
+  </section>
+</main>
+
+
+  <footer>&copy; 2025 Bach World | 자료 출처 : Netherlands Bach Society 외</footer>
+</body>
+</html>

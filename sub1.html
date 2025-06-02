@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>All of Bach | 바흐의 생애</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .tl{
+      position: relative;
+      padding: 2.5rem;
+      margin: 20px 0;
+    }
+    .tl::before{
+      content:"";
+      position:absolute; inset:0;
+      margin-left: calc(50% - 1px);
+      width:2px; background:#000000;
+    }
+    .tl ul{list-style:none;margin:0;padding:0}
+    .tl li{
+      width:50%;
+      padding:1.8rem 0;
+      display:flex;
+      align-items:flex-start;
+      gap:1rem;
+      box-sizing:border-box;
+    }
+    .tl li.right{margin-left:50%;}
+    .tl li.left{flex-direction:row-reverse;text-align:right;}
+    .tl-date {
+      font-weight:bold;
+      color:#000000;
+      white-space:nowrap;
+      line-height:1.4;
+      padding: 0.2rem 2rem;
+      border-bottom: 2px solid #000000;
+    }
+    /* ── 설명 카드 ── */
+    .tl-card{
+      max-width:280px;
+      border:1px solid #bbb;
+      border-radius:4px;
+      padding:1rem 1.2rem;
+      line-height:1.55;
+      color:#555;
+      background:#fff;
+    }
+
+    /* ═════ 반응형: 700 px 이하에서 세로형 스택 ═════ */
+    @media(max-width:700px){
+      .tl::before{left:-190px;}            /* 수직선 왼쪽으로 */
+      .tl li,
+      .tl li.right,
+      .tl li.left{
+        width:100%;
+        margin:0;
+        flex-direction:row;              /* 날짜 → 카드 순서 고정 */
+        text-align:left;
+      }
+      .tl li{gap:1rem}
+      .tl-date{min-width:130px;}          /* 날짜 폭 확보 */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo"><a href="index.html"><img src="src/images/logo.jpg"></a></div>
+      <nav>
+        <a href="sub1.html">바흐의 생애</a>
+        <a href="sub2.html">주요 작품</a>
+        <a href="sub3.html">음악적 특징</a>
+        <a href="sub4.html">주요 악기</a>
+        <a href="sub5.html">NBS 소개</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <h1>바흐의 생애</h1>
+    <section class="tl">
+      <ul>
+        <li class="right">
+          <span class="tl-date">1685&nbsp;~&nbsp;1700</span>
+          <div class="tl-card">
+            독일 아이제나흐에서 출생. 어려서 부모를 여의고,
+            형(요한 크리스토프)에게 오르간과 작곡을 배움.
+          </div>
+        </li>
+        <li class="left">
+          <span class="tl-date">1700&nbsp;~&nbsp;1703</span>
+          <div class="tl-card">
+            뤼네부르크 성 미카엘 학교 재학중이던 시절에 합창단 단원들과
+            북독일 및 프랑스풍 바로크 음악들을 접함.
+          </div>
+        </li>
+        <li class="right">
+          <span class="tl-date">1703&nbsp;~&nbsp;1708</span>
+          <div class="tl-card">
+            아른슈타트·뮐하우젠에서 오르가니스트로 활동,
+            <em>칸타타 BWV 4</em> 등 초기 작품 작곡. 마리아 바르바라와 결혼.
+          </div>
+        </li>
+        <li class="left">
+          <span class="tl-date">1708&nbsp;~&nbsp;1717</span>
+          <div class="tl-card">
+            바이마르 궁정에서 오르가니스트 및 실내악 연주자로 활동.
+            <em>토카타와 푸가 BWV&nbsp;565</em>,
+            <em>오르간 소곡집</em> 등 다수의 오르간 작품 및 칸타타 걸작 탄생.
+          </div>
+        </li>
+        <li class="right">
+          <span class="tl-date">1717&nbsp;~&nbsp;1723</span>
+          <div class="tl-card">
+            쾨텐 궁정에서 악장으로 활동함. 종교 제약이 적어
+            <em>무반주 첼로 모음곡</em>, <em>브란덴부르크 협주곡</em> 등
+            종교에 구애받지 않는 곡들 집필.
+          </div>
+        </li>
+        <li class="left">
+          <span class="tl-date">1723&nbsp;~&nbsp;1740</span>
+          <div class="tl-card">
+            라이프치히 토마스 교회의 칸토어로 활동.
+            <em>마태 수난곡</em>, <em>B단조 미사</em>,
+            <em>평균율 클라비어곡집 II</em> 등 대작 완성.
+          </div>
+        </li>
+        <li class="right">
+          <span class="tl-date">1740&nbsp;~&nbsp;1750</span>
+          <div class="tl-card">
+            시력 악화로 수술 후 합병증으로 65세에 별세.
+            오늘날 서양음악의 기초를 세운 작곡가로 평가됨.
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>&copy; 2025 Bach World | 자료 출처 : Netherlands Bach Society 외</footer>
+</body>
+</html>

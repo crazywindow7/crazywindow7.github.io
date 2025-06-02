@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>All of Bach | 주요 작품</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .art-grid{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 48px 24px;
+      margin: 20px auto;
+    }
+    .art-item{
+      display:flex;
+      flex-direction:column;
+    }
+    .art-desc {
+      margin-bottom: 20px;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      border: 2px solid #000000;
+      border-radius:6px;
+      padding: 10px;
+    }
+    .art-link{
+      width: 100%;
+      aspect-ratio: 1/1.1;
+      overflow:hidden;
+      border:1px solid #ccc;
+      border-radius:6px;
+      background:#e0e0e0;
+      transition:transform .2s;
+    }
+    .art-link img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+    .art-link:hover{
+      transform:translateY(-4px);
+    }
+    @media screen and (max-width: 800px){
+      .art-grid {
+        grid-template-columns:repeat(2,1fr);
+      }
+    }
+    @media screen and (max-width: 650px){
+      .art-grid {
+        grid-template-columns:1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo"><a href="index.html"><img src="src/images/logo.jpg"></a></div>
+      <nav>
+        <a href="sub1.html">바흐의 생애</a>
+        <a href="sub2.html">주요 작품</a>
+        <a href="sub3.html">음악적 특징</a>
+        <a href="sub4.html">주요 악기</a>
+        <a href="sub5.html">NBS 소개</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>주요 작품</h1>
+
+    <section class="art-grid">
+      <div class="art-item">
+        <p class="art-desc">교회 음악</p>
+        <a href="church.html" class="art-link">
+          <img src="src/images/church_music.webp" alt="교회 음악">
+        </a>
+      </div>
+
+      <div class="art-item">
+        <p class="art-desc">건반 음악</p>
+        <a href="keyboard.html" class="art-link">
+          <img src="src/images/keyboard_music.jpg" alt="건반 음악">
+        </a>
+      </div>
+
+      <div class="art-item">
+        <p class="art-desc">관현악</p>
+        <a href="orchestra.html" class="art-link">
+          <img src="src/images/orchestra_music.jpg" alt="관현악">
+        </a>
+      </div>
+
+      <div class="art-item">
+        <p class="art-desc">대위법 실험 작품</p>
+        <a href="contrapuntus.html" class="art-link">
+          <img src="src/images/contrapuntus_music.webp" alt="대위법 실험 작품">
+        </a>
+      </div>
+    </section>
+  </main>
+
+
+  <footer>&copy; 2025 Bach World | 자료 출처 : Netherlands Bach Society 외</footer>
+</body>
+</html>

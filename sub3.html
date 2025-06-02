@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>All of Bach | 음악적 특징</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .features-wrap{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0 2rem;
+      align-items: start;
+      margin: 20px auto;
+    }
+    .features-wrap > .feature_1:first-child{
+      border-right:2px solid #ccc;
+      padding-right: 2rem;
+    }
+    .feature_1 {
+      display: grid;
+      grid-template-columns: 30% 1fr;
+      gap: 1rem;
+    }
+    .feature_2 {
+      display: grid;
+      grid-template-rows: 20% 1fr;
+      grid-template-areas:
+          "label"
+          "thumb";
+      gap: 1rem;
+    }
+    .feature_3 {
+      display: grid;
+      grid-template-rows: auto;
+      grid-template-areas:
+          "video"
+          "desc";
+      gap: 1rem;
+    }
+    .feature-label {
+      grid-area: label;
+      border: 2px solid #000;
+      padding: .8rem 1rem;
+      font-size: 1rem;
+      font-weight: 700;
+      text-align: center;
+      white-space: nowrap;
+    }
+    .feature-media {grid-area:video;}
+    .feature-thumb {grid-area:thumb;}
+    .feature-desc  {grid-area:desc;}
+    .feature-thumb{
+      overflow:hidden;
+      border:1px solid #ccc;
+      border-radius:6px;
+      background:#e0e0e0;
+    }
+    .feature-thumb img{width:100%;height:100%;object-fit:cover;}
+    .feature-media iframe{
+      width: 100%;
+      aspect-ratio:16/9;
+      display: block;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      object-fit: cover;
+    }
+    .feature-desc{
+      border:2px solid #ccc;
+      padding:.6rem 1rem;
+      font-size:.95rem;
+      color:#555;
+      line-height:1.5;
+      align-self:center;
+    }
+    @media(max-width:900px){
+      .features-wrap{grid-template-columns:1fr;}
+      .features-wrap > .feature_1:first-child{
+        border-right:none;
+        border-bottom:2px solid #ccc;
+        padding:0 0 2rem 0;
+      }
+      .features-wrap > .feature_1:last-child{
+        padding: 2rem 0 0 0;
+      }
+    }
+    @media(max-width:600px){
+      .feature_1{
+        grid-template-columns: 30% 1fr;
+        gap: .8rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo"><a href="index.html"><img src="src/images/logo.jpg"></a></div>
+      <nav>
+        <a href="sub1.html">바흐의 생애</a>
+        <a href="sub2.html">주요 작품</a>
+        <a href="sub3.html">음악적 특징</a>
+        <a href="sub4.html">주요 악기</a>
+        <a href="sub5.html">NBS 소개</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+  <h1>음악적 특징</h1>
+  <section class="features-wrap">
+    <div class="feature_1">
+      <div class="feature_2">
+        <h2 class="feature-label">대위법</h2>
+        <figure class="feature-thumb">
+          <img src="src/images/counterpoint.png">
+        </figure>
+      </div>
+      <div class="feature_3">
+        <div class="feature-media">
+          <iframe src="https://www.youtube.com/embed/Tybs1T9OLBg?si=SMLmytOzoUdFboRW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <p class="feature-desc">
+          대위법은 특정한 선율들이 동시에 연결되어 화성을 이루는 작곡 기법이다. 위 영상 사이사이에서 보이는 원기둥 표시는, 특정한 멜로디가 대위적으로 결합된 것을 알려준다.
+        </p>
+      </div>
+    </div>
+
+    <div class="feature_1">
+      <div class="feature_2">
+        <h2 class="feature-label">신학적 주제</h2>
+        <figure class="feature-thumb">
+          <img src="src/images/jesus.png">
+        </figure>
+      </div>
+      <div class="feature_3">
+        <div class="feature-media">
+          <iframe src="https://www.youtube.com/embed/Zry9dpM1_n4?si=31K3TcSdhaYtDOjy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <p class="feature-desc">
+          바흐는 독실한 기독교 신자였다. 그는 음악을 단순한 감상용이 아닌, 청중이 신앙적으로 자신의 내면을 성찰하고 신의 가르침을 깨달을 수 있도록 설계하였다.
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+  <footer>&copy; 2025 Bach World | 자료 출처 : Netherlands Bach Society 외</footer>
+</body>
+</html>

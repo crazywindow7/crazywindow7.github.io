@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>All of Bach | 메인</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .main_grid { 
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin: 30px auto;
+    }
+    @media screen and (max-width: 650px) {
+      .main_grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .main_grid img {
+      width: 100%;
+      height: 100%;
+      border: 10px solid #bdbdbd;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo"><a href="index.html"><img src="src/images/logo.jpg"></a></div>
+      <nav>
+        <a href="sub1.html">바흐의 생애</a>
+        <a href="sub2.html">주요 작품</a>
+        <a href="sub3.html">음악적 특징</a>
+        <a href="sub4.html">주요 악기</a>
+        <a href="sub5.html">NBS 소개</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="main_grid">
+      <img src="src/images/bach_portrait.png" alt="바흐 초상화">
+      <img src="src/images/bach_paper.jpg" alt="바흐 악보">
+      <img src="src/images/baroque.jpg" alt="바로크 삽화">
+    </section>
+  </main>
+
+  <footer>&copy; 2025 All of Bach | 자료 출처 : Netherlands Bach Society 외</footer>
+</body>
+</html>
